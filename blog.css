@@ -1,0 +1,640 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&family=Oswald:wght@400;500;700&display=swap");
+
+/* Base Styles */
+:root {
+  --primary: #5a189a;
+  --primary-dark: #3c096c;
+  --primary-light: #9d4edd;
+  --secondary: #ff5400;
+  --text-dark: #1a1a1a;
+  --text-light: #666666;
+  --text-white: #ffffff;
+  --bg-light: #f8f9fa;
+  --bg-dark: #0f0f1b;
+  --border-color: #e0e0e0;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --radius: 8px;
+}
+:root{
+  --color-pri: #4D006E;
+  --color-pri-light: rgba(77, 0, 110, .5);
+  --text-dark: #212121;
+}
+/* @font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+} */
+body.no-scroll {
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* h1, h2, h3, h4, h5, h6, p{
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  
+} */
+body {
+  /* font-family: "Oswald", "Plus Jakarta Sans","Poppins"; */
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+
+
+.container {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header .container{
+  margin-top: 0;
+}
+.container, .football-fan, .club-container, .scout-container {
+  /* max-width: 95%; */
+  padding-left: 60px;
+  padding-right: 100px;
+  margin-top: 160px ;
+  
+  
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  
+  font-family: Plus Jakarta Sans;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+letter-spacing: 0.5%;
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+ 
+}
+
+/* img {
+  width: 100%;
+  height: 65vh;
+  display: block;
+} */
+
+.text-center {
+  text-align: center;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--text-white);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  color: var(--text-white);
+  border: none;
+}
+
+/* .btn-secondary:hover {
+  background-color: #e64d00; */
+
+
+.btn-text {
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.btn-text:hover {
+  background-color: var(--primary-light);
+  color: var(--text-white);
+}
+
+.btn-outline {
+  background-color: white;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-light);
+  color: var(--text-white);
+}
+
+.btn-light {
+  background-color: var(--text-white);
+  color: var(--primary);
+  border: none;
+}
+
+.btn-light:hover {
+  background-color: var(--bg-light);
+}
+.icon{
+border-radius: 100px;
+color:var(--primary-light);
+}
+.container1 {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.main-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.sidebar {
+    width: 350px;
+    margin-top: 120px;
+}
+.latest-news{
+  margin-top: 80px;
+}
+/* Section styles */
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: black;
+}
+
+/* Latest news section *//* Featured Article Adjustments */
+.featured-article {
+  border-radius: 15px;
+  overflow: hidden;
+
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.article-image-container {
+  height: 265px;
+}
+
+.featured-image {
+  object-position: center top;
+  mix-blend-mode: multiply;
+}
+
+
+
+.article-content {
+  padding: 31px;
+  /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.2)0%, #00000033 100%); */
+  position: relative;
+  z-index: 1;
+  
+}
+
+.article-title {
+  font-family: Oswald;
+font-weight: 300;
+font-size: 31px;
+line-height: 54px;
+letter-spacing: 0%;
+color: #f8f9fa;
+
+
+}
+.secondary-article-title{
+  font-family: Oswald;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 54px;
+  letter-spacing: 0%;
+  color: black
+}
+
+.article-excerpt1 {
+  font-size: 18px;
+  line-height: 1.6;
+  color: white;
+  margin-bottom: 2rem;
+  max-width: 100%;
+}
+.article-excerpt {
+  font-size: 14px;
+  line-height: 1.6;
+  color: black;
+  margin-bottom: 2rem;
+  max-width: 100%;
+}
+.read-more2{
+  font-weight: 700;
+  color: white;
+  position: relative;
+  padding-right: 24px;
+  transition: all 0.3s ease;
+  text-decoration: underline;
+}
+.read-more {
+  font-weight: 700;
+  color: var(--primary);
+  position: relative;
+  padding-right: 24px;
+  transition: all 0.3s ease;
+}
+
+.read-more::after {
+  content: '→';
+  position: absolute;
+  right: 0;
+  transition: right 0.2s ease;
+}
+
+.read-more:hover {
+  color: var(--primary-dark);
+}
+
+.read-more:hover::after {
+  right: -5px;
+}
+
+
+/* Secondary news section */
+.news-article {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+   
+    margin-bottom: 20px;
+}
+
+.news-article.with-image .article-image {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+}
+
+.secondary-image {
+  width: 240px;
+  height: 240px;
+  border-radius: 8px;
+  
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.news-article .article-content {
+    flex: 1;
+   padding-left:144px ;
+   padding-top: 10px;
+}
+
+.news-article .article-title{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.article-meta {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+/* Trending news section */
+.trending-articles, .top-pick-articles {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.trending-article {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    
+    width: 150%;
+}
+
+.trending-image {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trending-content {
+    flex: 1;
+    padding: 10px;
+}
+
+.trending-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.trending-content .read-more {
+    font-size: 12px;
+}
+
+/* Top picks section */
+.top-picks {
+    margin-top: 30px;
+}
+
+/* Add these media queries at the end of your CSS */
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .top-pick-articles .trending-article,.article-content {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  /* General adjustments */
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 100px;
+  }
+
+  .article-excerpt1{
+    font-size: 14px;
+  }
+
+  .nav-menu {
+    padding: 20px;
+  }
+
+  /* Featured article */
+  .featured-article {
+    margin-bottom: 30px;
+  }
+
+  .article-image-container {
+    height: 200px;
+  }
+
+  .article-content {
+    padding: 20px !important;
+  }
+
+  .article-title,.secondary-article-title {
+    font-size: 24px !important;
+    line-height: 1.3;
+    max-width: 100%;
+  }
+
+  .article-excerpt {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .play-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .play-button i {
+    font-size: 18px;
+  }
+
+  /* Trending news */
+  .trending-article ,.news-article{
+    flex-direction: column;
+  }
+
+ 
+  /* Sidebar adjustments */
+  .sidebar {
+    margin-top: 40px;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 480px) {
+  /* Mobile-first adjustments */
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 80px;
+  }
+  .trending-image,.secondary-image{
+    display: none;
+  }
+
+  /* Featured article */
+  .article-image-container {
+    width: 100%;
+  }
+  .article-title {
+   
+  }
+  .article-title,.secondary-article-title {
+    font-size: 20px !important;
+    line-height: 1.2;
+  }
+  .article-excerpt1{
+
+  }
+  .article-excerpt {
+    font-size: 14px;
+  }
+
+  /* Secondary news */
+  .news-article.with-image .article-image {
+    height: 150px;
+  }
+
+  /* Trending news cards */
+  .trending-image {
+    height: 120px;
+  }
+
+  .trending-content {
+    padding: 15px ;
+    width: 100%;
+  }
+  .trending-article {
+    width: 100%;
+  }
+
+  /* Auth buttons */
+  .auth-buttons .btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+
+
+}
+
+/* Mobile menu adjustments */
+@media (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: white;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    padding-top: 60px;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+.trending-title{
+  font-size: 28px;
+}
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+  }
+
+  .menu-overlay.active {
+    display: block;
+  }
+
+  .mobile-auth-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1160px){
+  .article-content {
+    flex-direction: row;
+    padding: 13px;
+    margin-bottom: 15px;
+  }
+  .read-more2{
+    margin-bottom: 0;
+  }
+.article-title{
+  font-size: 28px;
+  padding: 0;
+  line-height: 30px;
+}
+}
+@media (max-width: 900px) {
+
+.article-content{
+  padding: 7px;
+}
+.article-excerpt1{
+  margin-bottom: 5px;
+}
+}
+@media (max-width: 800px) {
+  .container1 {
+    flex-direction: column;
+  }
+
+  .main-content,
+  .sidebar {
+    width: 100%;
+  }
+
+  .featured-article,
+  .news-article.with-image,
+  .trending-article {
+    flex-direction: column;
+  }
+
+  .article-image-container {
+    width: 100% !important;
+    height: 250px;
+  }
+
+  .article-image{
+    display: none;
+  }
+  .article-content {
+    width: 100% !important;
+    padding: 20px !important;
+  }
+
+  .trending-image {
+    display: none;
+  }
+
+  .secondary-article-title {
+    font-size: 32px !important;
+    line-height: 1.4;
+  }
+}
