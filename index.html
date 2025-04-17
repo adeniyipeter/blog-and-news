@@ -168,10 +168,10 @@
                     <div class="article-image-container">
                         <img src="assets/blog.jpeg" alt="Football player with blonde hair" class="featured-image">
                         <div class="play-button">
-                            <i class="fas fa-play"></i>
+                            
                         </div>
                     </div>
-                    <div class="article-content">
+                    <div class="article-main-content">
                         <h3 class="article-title">Man Utd and Chelsea sets to enter a bidding war for Oshimen</h3>
                         <p class="article-excerpt1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra convallis ut ullamcorper sem ac nullam tellus egestas tincidunt elementum. Donec ac fringilla velit vel.</p>
                         <a href="#" class="read-more2">Read More</a>
@@ -184,7 +184,7 @@
               
                 <div class="news-article with-image">
                     <div class="article-image">
-                        <img src="assets/blog_second.jpeg" alt="Football players in action" class="secondary-image">
+                        <img src="assets/blog-second.jpeg" alt="Football players in action" class="secondary-image">
                     </div>
                     <div class="article-content">
                         <h3 class="secondary-article-title">Libya sets to host the 2025 African Minifootball Cup at Derna</h3>
@@ -197,7 +197,7 @@
                 </div>
                 <div class="news-article with-image">
                   <div class="article-image">
-                      <img src="assets/blog_second.jpeg" alt="Football players in action" class="secondary-image">
+                      <img src="assets/blog-second.jpeg" alt="Football players in action" class="secondary-image">
                   </div>
                   <div class="article-content">
                       <h3 class="secondary-article-title">Libya sets to host the 2025 African Minifootball Cup at Derna</h3>
@@ -218,7 +218,7 @@
                 <div class="trending-articles">
                     <div class="trending-article">
                         <div class="trending-image">
-                            <img src="assets/blog_second.jpeg" alt="Yobe Stars players" class="thumbnail">
+                            <img src="assets/blog-second.jpeg" alt="Yobe Stars players" class="thumbnail">
                         </div>
                         <div class="trending-content">
                             <h4 class="trending-title">Yobe Stars are climbing the ladder finely</h4>
@@ -231,7 +231,7 @@
 
                     <div class="trending-article">
                         <div class="trending-image">
-                            <img src="assets/blog_second.jpeg" alt="Yobe Stars players" class="thumbnail">
+                            <img src="assets/blog-second.jpeg" alt="Yobe Stars players" class="thumbnail">
                         </div>
                         <div class="trending-content">
                             <h4 class="trending-title">Yobe Stars are climbing the ladder finely</h4>
@@ -244,7 +244,7 @@
 
                     <div class="trending-article">
                         <div class="trending-image">
-                            <img src="assets/blog_second.jpeg" alt="Yobe Stars players" class="thumbnail">
+                            <img src="assets/blog-second.jpeg" alt="Yobe Stars players" class="thumbnail">
                         </div>
                         <div class="trending-content">
                             <h4 class="trending-title">Yobe Stars are climbing the ladder finely</h4>
@@ -257,7 +257,7 @@
 
                     <div class="trending-article">
                         <div class="trending-image">
-                            <img src="assets/blog_second.jpeg" alt="Yobe Stars players" class="thumbnail">
+                            <img src="assets/blog-second.jpeg" alt="Yobe Stars players" class="thumbnail">
                         </div>
                         <div class="trending-content">
                             <h4 class="trending-title">Yobe Stars are climbing the ladder finely</h4>
@@ -275,7 +275,7 @@
                 <div class="top-pick-articles">
                     <div class="trending-article">
                         <div class="trending-image">
-                            <img src="assets/blog_second.jpeg" alt="Yobe Stars players" class="thumbnail">
+                            <img src="assets/blog-second.jpeg" alt="Yobe Stars players" class="thumbnail">
                         </div>
                         <div class="trending-content">
                             <h4 class="trending-title">Yobe Stars are climbing the ladder finely</h4>
@@ -288,7 +288,7 @@
 
                     <div class="trending-article">
                         <div class="trending-image">
-                            <img src="assets/blog_second.jpeg" alt="Yobe Stars players" class="thumbnail">
+                            <img src="assets/blog-second.jpeg" alt="Yobe Stars players" class="thumbnail">
                         </div>
                         <div class="trending-content">
                             <h4 class="trending-title">Yobe Stars are climbing the ladder finely</h4>
@@ -300,7 +300,7 @@
                     </div>
                     <div class="trending-article">
                       <div class="trending-image">
-                          <img src="assets/blog_second.jpeg" alt="Yobe Stars players" class="thumbnail">
+                          <img src="assets/blog-second.jpeg" alt="Yobe Stars players" class="thumbnail">
                       </div>
                       <div class="trending-content">
                           <h4 class="trending-title">Yobe Stars are climbing the ladder finely</h4>
@@ -312,7 +312,7 @@
                   </div>
                   <div class="trending-article">
                     <div class="trending-image">
-                        <img src="assets/blog_second.jpeg" alt="Yobe Stars players" class="thumbnail">
+                        <img src="assets/blog-second.jpeg" alt="Yobe Stars players" class="thumbnail">
                     </div>
                     <div class="trending-content">
                         <h4 class="trending-title">Yobe Stars are climbing the ladder finely</h4>
@@ -324,7 +324,7 @@
                 </div>
                 <div class="trending-article">
                   <div class="trending-image">
-                      <img src="assets/blog_second.jpeg" alt="Yobe Stars players" class="thumbnail">
+                      <img src="assets/blog-second.jpeg" alt="Yobe Stars players" class="thumbnail">
                   </div>
                   <div class="trending-content">
                       <h4 class="trending-title">Yobe Stars are climbing the ladder finely</h4>
@@ -419,7 +419,7 @@
 
     <!-- Large background logo - centered -->
     <div class="footer-background-logo">
-      <img src="assets/Logo (2).png" alt="" aria-hidden="true" />
+      <img src="assets/logo.png" alt="" aria-hidden="true" />
     </div>
 
     <div class="footer-bottom">
@@ -517,7 +517,35 @@
         }
     });
 
-    
+          // dropdown
+
+          document.addEventListener("DOMContentLoaded", function () {
+  const dropdown = document.querySelector(".dropdown");
+  const dropdownToggle = dropdown.querySelector(".dropdown-toggle");
+  const dropdownMenu = dropdown.querySelector(".dropdown-menu");
+
+  // Toggle dropdown when the toggle is clicked
+  dropdownToggle.addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation(); // Prevent outside click from immediately closing it
+    dropdownMenu.classList.toggle("dropdown-open");
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener("click", function (e) {
+    if (!dropdown.contains(e.target)) {
+      dropdownMenu.classList.remove("dropdown-open");
+    }
+  });
+
+  // Close dropdown when clicking on a link inside it
+  dropdownMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function () {
+      dropdownMenu.classList.remove("dropdown-open");
+    });
+  });
+});
+
    
     </script>
   </body>
