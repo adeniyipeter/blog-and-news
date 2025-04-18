@@ -560,7 +560,9 @@ letter-spacing: 0%;
   .news-article.with-image .article-image {
     height: 150px;
   }
-
+  .latest-news {
+    margin-top: 50px;
+  }
   /* Trending news cards */
   .trending-image {
     height: 120px;
@@ -579,7 +581,9 @@ letter-spacing: 0%;
     padding: 8px 12px;
     font-size: 14px;
   }
-
+  .sidebar{
+    margin-top: 0px;
+  }
 
 
 }
